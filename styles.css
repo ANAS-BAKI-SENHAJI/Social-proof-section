@@ -152,7 +152,7 @@ body {
         padding: 6% 9% 3% 9%;
         font-size: 15px;
         background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
-        background-position: left 0vw top 0vh, right 0vw bottom 0vh;
+        background-position: left 0vw top 0vh, right 0vw bottom -10vh;
     }
 
     #title1 {
