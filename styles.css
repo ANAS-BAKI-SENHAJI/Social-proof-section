@@ -1,0 +1,210 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 50px 15px;
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left 0vw top 0vh, left 0 bottom 0;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+        background-position: left 0vw top 0vh, left 30vw bottom -10vh;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+[class*="col-"] {
+    float: left;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+#title1 {
+    text-align: center;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 35px;
+    line-height: 1;
+}
+
+#parag1 {
+    text-align: center;
+    color: hsl(303, 10%, 53%);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+#right-side>div {
+    background-color: hsl(300, 24%, 96%);
+    width: 100%;
+    border-radius: 8px;
+    height: 70px;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icon-star {
+    margin: 2px;
+    height: 14px;
+}
+
+.stars-side {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.Description-of-stars {
+    margin: auto;
+    width: fit-content;
+    color: hsl(300, 43%, 22%);
+}
+
+/* ######################## Second part ######################## */
+#second-part{
+    margin-top: 25px;
+}
+
+.profile-card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin-bottom: 17px;
+}
+
+.profile-card table {
+    margin: 20px 22px;   
+}
+
+.profile-card img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 22px;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.name-description {
+    color: hsl(333, 80%, 67%);
+}
+
+.profile-card p {
+    color: hsl(300, 24%, 96%);
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* ###################### Desktop Version ######################## */
+@media only screen and (min-width: 970px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    body {
+        padding: 6% 9% 3% 9%;
+        font-size: 15px;
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+        background-position: left 0vw top 0vh, right 0vw bottom 0vh;
+    }
+
+    #title1 {
+        width: 65%;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    #parag1 {
+        text-align: left;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    #right-side>div {
+        width: 84%;
+        height: 50px;
+    }
+
+    #right-side>div:nth-of-type(2) {margin-left: 8%;}
+    #right-side>div:nth-of-type(3) {margin-left: 16%;}
+
+    .stars-side {
+        margin-bottom: 0;
+        padding-left: 8%;
+    }
+
+    .Description-of-stars {
+        float: left;
+        margin-left: 0;
+    }
+
+    .Rating {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Rating div:nth-of-type(1) {flex: 3;} 
+    .Rating div:nth-of-type(2) {flex: 5;}
+
+    /* ######################## Second part ######################## */
+    #second-profile-card {
+        margin-right: 27px ;
+        margin-left: 27px ;
+    }
+
+    .profile-card {
+        width: 31%;
+        
+    }
+
+    #second-part div:nth-of-type(2) {margin-top: 20px;}
+    #second-part div:nth-of-type(3) {margin-top: 40px;}
+}
